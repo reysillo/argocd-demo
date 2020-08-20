@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: guestbook-ui
+  name: app
 spec:
   replicas: 1
   revisionHistoryLimit: 3
   selector:
     matchLabels:
-      app: guestbook-ui
+      app: app
   template:
     metadata:
       labels:
-        app: guestbook-ui
+        app: app
     spec:
       containers:
       - image: reysillo/argodemo-app:0.0.1
-        name: guestbook-ui
+        name: app
         ports:
         - containerPort:8081
