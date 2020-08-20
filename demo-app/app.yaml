@@ -14,7 +14,7 @@ spec:
         app: app
     spec:
       containers:
-      - image: reysillo/argodemo-app:0.0.3
+      - image: reysillo/argodemo-app:0.0.1
         name: app
         ports:
         - containerPort: 8081
